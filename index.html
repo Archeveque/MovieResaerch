@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<link href="style.css" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Research</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body style="background-color: rgb(10,10,10);color: White">
+    <div class="container mt-5">
+        <h1 class="text-center">Movie research</h1>
+        <form id="searchForm" class="form-inline justify-content-center mt-5">
+            <input id="searchInput" type="text" class="form-control mr-2" placeholder="Search a movie...">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <p class="text-muted d-flex justify-content-center"> Go watch Across the Spiderverse</p>
+        <div id="resultsContainer" class="mt-5"></div>
+    </div>
+
+    <div id="moviesContainer" class= "moviesContainer"></div>
+    
+    <div class="modal" tabindex="-1" role="dialog" id="movieModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="movieModalTitle">Title
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="movieModalPlot">Story</p>
+              <img src="" alt="Affiche du film" id="movieModalPoster" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- Bootstrap's Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- end of Bootstrap's Javascript-->   
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 
+﻿
